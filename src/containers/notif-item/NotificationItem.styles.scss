@@ -1,0 +1,57 @@
+.notif-item {
+  max-width: 430px;
+  height: 100%;
+  border: none !important;
+  border-radius: 10px !important;
+  cursor: pointer;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  .ant-card-body {
+    padding: 0;
+  }
+  .notif-img {
+    height: 250px;
+    width: 100%;
+  }
+
+  .content {
+    box-sizing: border-box;
+    padding: 20px 0;
+    margin-bottom: 5px;
+    padding: 24px;
+  }
+
+  .state {
+    box-sizing: border-box;
+    padding: 8px 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    font-weight: 600;
+    font-size: large;
+    text-align: center;
+    border-radius: 0 0 10px 10px;
+
+    &.active {
+      background-color: #d7eecc;
+      color: #36a900;
+    }
+
+    &.inactive {
+      background-color: #fbf2d5;
+      color: #edc02b;
+    }
+  }
+
+  .available {
+    &.inactive {
+      background-color: #fbf2d5;
+      color: #edc02b;
+      box-sizing: border-box;
+      padding: 10px 0;
+      margin-bottom: 5px;
+      text-align: center;
+      font-size: 15px;
+    }
+  }
+}
