@@ -35,9 +35,6 @@ class TestNotif extends React.Component {
   componentDidMount() {
     
   }
-   getHost=()=> {
-    return("http://localhost:3000")
-  }
   render() {
     // const locstore = JSON.parse(localStorage.getItem("profile")) || {plan:"none"};
 
@@ -231,7 +228,7 @@ class TestNotif extends React.Component {
                   >
                     {/* <a href={getHost()} target="_blank"> */}
                     Please allow notifications on this link to be able to test
-                    notifications in the edit screen
+                    notifications.
                     {/* </a> */}
                   </Col>
                   <Col
@@ -242,17 +239,7 @@ class TestNotif extends React.Component {
                     xl={4}
                     style={{ paddingTop: "5px" }}
                   >
-                    <a href={`${this.getHost()}/allownotif`} target="_blank">
-                      <Button
-                        style={{
-                          width: "100%",
-                          borderRadius: "5px",
-                          fontSize: "15px",
-                        }}
-                      >
-                        Allow
-                      </Button>
-                    </a>
+
                   </Col>
                 </Row>
               </Card>
